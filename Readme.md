@@ -8,6 +8,10 @@ Features:
 * Support for both synchronous and asynchronous method handlers
 * WS-Security (currently only UsernameToken and PasswordText encoding is supported)
 
+## Forked
+
+This module was forked to make the http request options accessible from the highlevel code. (August 11, 2013)
+
 ## Install
 
 Install with [npm](http://github.com/isaacs/npm):
@@ -26,9 +30,13 @@ Install with [npm](http://github.com/isaacs/npm):
   soap.createClient(url, function(err, client) {
       client.MyFunction(args, function(err, result) {
           console.log(result);
-      });
+      }, options);
   });
 ```
+
+#### Options:
+
+Please refer to http(s) node module(s).
 
 ### soap.listen(*server*, *path*, *services*, *wsdl*) - create a new SOAP server that listens on *path* and provides *services*.
 *wsdl* is an xml string that defines the service.
