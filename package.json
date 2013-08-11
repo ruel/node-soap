@@ -1,6 +1,6 @@
 {
     "name": "soap",
-    "version": "0.2.8-voyager",
+    "version": "0.2.9-voyager",
     "private": "true",
     "description": "A minimal node SOAP client",
     "engines": { "node": ">=0.8.0" },
